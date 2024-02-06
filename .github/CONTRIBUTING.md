@@ -2,7 +2,7 @@
 
 Contribuições são **bem vindas** e serão totalmente **creditadas**.
 
-Nós aceitamos contribuições via **Pull Requests** no [Github](https://github.com/pedroni/correios-php).
+Nós aceitamos contribuições via **Pull Requests** no [Github](https://github.com/flyingluscas/correios-php).
 
 ## Pull Requests
 

@@ -135,7 +135,7 @@ A Licença MIT (MIT). Consulte o [arquivo de licença](LICENSE.md) para obter ma
 [link-codecov]: https://codecov.io/gh/pedroni/correios-php
 [link-packagist]: https://packagist.org/packages/pedroni/correios-php
 [link-downloads]: https://packagist.org/packages/pedroni/correios-php
-[link-author]: https://github.com/pedroni
+[link-author]: https://github.com/flyingluscas
 [link-contributors]: ../../contributors
 
 [correios-sigep]: https://apps.correios.com.br/SigepMasterJPA/AtendeClienteService/AtendeCliente?wsdl

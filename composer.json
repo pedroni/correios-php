@@ -11,13 +11,19 @@
         "rastreio",
         "cep"
     ],
-    "homepage": "https://github.com/pedroni/correios-php",
+    "homepage": "https://github.com/flyingluscas/correios-php",
     "license": "MIT",
     "authors": [
         {
+            "name": "Lucas Pedroni",
+            "email": "lucas@pedroni.dev",
+            "homepage": "https://github.com/pedroni",
+            "role": "Developer"
+        },
+        {
             "name": "Lucas Pires",
             "email": "lucas.pires.mattos@gmail.com",
-            "homepage": "https://github.com/pedroni",
+            "homepage": "https://github.com/flyingluscas",
             "role": "Developer"
         }
     ],
