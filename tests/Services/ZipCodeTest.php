@@ -1,9 +1,10 @@
 <?php
 
-namespace FlyingLuscas\Correios\Services;
+namespace Pedroni\Correios\Tests\Services;
 
-use FlyingLuscas\Correios\TestCase;
+use Pedroni\Correios\Tests\TestCase;
 use GuzzleHttp\Client as HttpClient;
+use Pedroni\Correios\Services\ZipCode;
 
 class ZipCodeTest extends TestCase
 {
@@ -14,7 +15,7 @@ class ZipCodeTest extends TestCase
      */
     protected $http;
 
-    public function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 

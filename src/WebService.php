@@ -1,6 +1,6 @@
 <?php
 
-namespace FlyingLuscas\Correios;
+namespace Pedroni\Correios;
 
 abstract class WebService
 {

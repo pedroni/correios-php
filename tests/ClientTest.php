@@ -1,18 +1,19 @@
 <?php
 
-namespace FlyingLuscas\Correios;
+namespace Pedroni\Correios\Tests;
 
-use FlyingLuscas\Correios\Contracts\FreightInterface;
-use FlyingLuscas\Correios\Contracts\ZipCodeInterface;
+use Pedroni\Correios\Client;
+use Pedroni\Correios\Contracts\FreightInterface;
+use Pedroni\Correios\Contracts\ZipCodeInterface;
 
 class ClientTest extends TestCase
 {
     /**
-     * @var \FlyingLuscas\Correios\Client
+     * @var \Pedroni\Correios\Tests\Client
      */
     protected $correios;
 
-    public function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 

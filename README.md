@@ -18,7 +18,7 @@ Uma maneira fácil de interagir com as principais funcionalidades dos [Correios]
 Via Composer
 
 ``` bash
-$ composer require flyingluscas/correios-php
+$ composer require pedroni/correios-php
 ```
 
 ## Uso
@@ -28,7 +28,7 @@ $ composer require flyingluscas/correios-php
 Encontrar endereço pelo CEP consultando diretamente o [WebService][correios-sigep] dos Correios.
 
 ``` php
-use FlyingLuscas\Correios\Client;
+use Pedroni\Correios\Client;
 
 require 'vendor/autoload.php';
 
@@ -59,8 +59,8 @@ Resultado:
 Calcular preços e prazos de serviços de entrega (Sedex, PAC e etc), com **suporte a multiplos objetos** na mesma consulta.
 
 ``` php
-use FlyingLuscas\Correios\Client;
-use FlyingLuscas\Correios\Service;
+use Pedroni\Correios\Client;
+use Pedroni\Correios\Service;
 
 require 'vendor/autoload.php';
 
@@ -125,17 +125,17 @@ Se você descobrir quaisquer problemas relacionados à segurança, envie um e-ma
 
 A Licença MIT (MIT). Consulte o [arquivo de licença](LICENSE.md) para obter mais informações.
 
-[ico-version]: https://img.shields.io/packagist/v/flyingluscas/correios-php.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/pedroni/correios-php.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/flyingluscas/correios-php.svg?style=flat-square
-[icon-circleci]: https://img.shields.io/circleci/project/github/flyingluscas/correios-php.svg?style=flat-square
-[icon-codecov]: https://img.shields.io/codecov/c/github/flyingluscas/correios-php.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/pedroni/correios-php.svg?style=flat-square
+[icon-circleci]: https://img.shields.io/circleci/project/github/pedroni/correios-php.svg?style=flat-square
+[icon-codecov]: https://img.shields.io/codecov/c/github/pedroni/correios-php.svg?style=flat-square
 
-[link-circleci]: https://circleci.com/gh/flyingluscas/correios-php
-[link-codecov]: https://codecov.io/gh/flyingluscas/correios-php
-[link-packagist]: https://packagist.org/packages/flyingluscas/correios-php
-[link-downloads]: https://packagist.org/packages/flyingluscas/correios-php
-[link-author]: https://github.com/flyingluscas
+[link-circleci]: https://circleci.com/gh/pedroni/correios-php
+[link-codecov]: https://codecov.io/gh/pedroni/correios-php
+[link-packagist]: https://packagist.org/packages/pedroni/correios-php
+[link-downloads]: https://packagist.org/packages/pedroni/correios-php
+[link-author]: https://github.com/pedroni
 [link-contributors]: ../../contributors
 
 [correios-sigep]: https://apps.correios.com.br/SigepMasterJPA/AtendeClienteService/AtendeCliente?wsdl

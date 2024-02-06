@@ -1,20 +1,21 @@
 <?php
 
-namespace FlyingLuscas\Correios\Services;
+namespace Pedroni\Correios\Tests\Services;
 
-use FlyingLuscas\Correios\PackageType;
-use FlyingLuscas\Correios\Service;
-use FlyingLuscas\Correios\TestCase;
+use Pedroni\Correios\PackageType;
+use Pedroni\Correios\Service;
+use Pedroni\Correios\Tests\TestCase;
+use Pedroni\Correios\Services\Freight;
 use GuzzleHttp\Client as HttpClient;
 
 class FreightTest extends TestCase
 {
     /**
-     * @var \FlyingLuscas\Correios\Services\Freight
+     * @var \Pedroni\Correios\Tests\Services\Freight
      */
     protected $freight;
 
-    public function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 

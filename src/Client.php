@@ -1,27 +1,28 @@
 <?php
 
-namespace FlyingLuscas\Correios;
+namespace Pedroni\Correios;
 
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Client as HttpClient;
-use FlyingLuscas\Correios\Services\Freight;
-use FlyingLuscas\Correios\Services\ZipCode;
-use FlyingLuscas\Correios\Contracts\FreightInterface;
-use FlyingLuscas\Correios\Contracts\ZipCodeInterface;
+use Pedroni\Correios\Services\Freight;
+use Pedroni\Correios\Services\ZipCode;
+use Pedroni\Correios\Contracts\FreightInterface;
+use Pedroni\Correios\Contracts\ZipCodeInterface;
 
 class Client
 {
+    public $http;
     /**
      * Serviço de frete.
      *
-     * @var \FlyingLuscas\Correios\Contracts\FreightInterface
+     * @var \Pedroni\Correios\Contracts\FreightInterface
      */
     protected $freight;
 
     /**
      * Serviço de CEP.
      *
-     * @var \FlyingLuscas\Correios\Contracts\ZipCodeInterface
+     * @var \Pedroni\Correios\Contracts\ZipCodeInterface
      */
     protected $zipcode;
 
@@ -29,8 +30,8 @@ class Client
      * Cria uma nova instância da classe Client.
      *
      * @param \GuzzleHttp\ClientInterface|null  $http
-     * @param \FlyingLuscas\Correios\Contracts\FreightInterface|null $freight
-     * @param \FlyingLuscas\Correios\Contracts\ZipCodeInterface|null $zipcode
+     * @param \Pedroni\Correios\Contracts\FreightInterface|null $freight
+     * @param \Pedroni\Correios\Contracts\ZipCodeInterface|null $zipcode
      */
     public function __construct(
         ClientInterface $http = null,
@@ -45,7 +46,7 @@ class Client
     /**
      * Serviço de frete dos Correios.
      *
-     * @return \FlyingLuscas\Correios\Contracts\FreightInterface
+     * @return \Pedroni\Correios\Contracts\FreightInterface
      */
     public function freight()
     {
@@ -55,7 +56,7 @@ class Client
     /**
      * Serviço de CEP dos Correios.
      *
-     * @return \FlyingLuscas\Correios\Contracts\ZipCodeInterface
+     * @return \Pedroni\Correios\Contracts\ZipCodeInterface
      */
     public function zipcode()
     {

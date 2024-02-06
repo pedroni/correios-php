@@ -1,15 +1,15 @@
 <?php
 
-namespace FlyingLuscas\Correios\Services;
+namespace Pedroni\Correios\Services;
 
 use SimpleXMLElement;
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\ClientInterface;
-use FlyingLuscas\Correios\Service;
-use FlyingLuscas\Correios\WebService;
-use FlyingLuscas\Correios\PackageType;
-use FlyingLuscas\Correios\Contracts\FreightInterface;
+use Pedroni\Correios\Service;
+use Pedroni\Correios\WebService;
+use Pedroni\Correios\PackageType;
+use Pedroni\Correios\Contracts\FreightInterface;
 
 class Freight implements FreightInterface
 {
@@ -104,7 +104,7 @@ class Freight implements FreightInterface
      */
     public function origin($zipCode)
     {
-        $this->payload['sCepOrigem'] = preg_replace('/[^0-9]/', null, $zipCode);
+        $this->payload['sCepOrigem'] = preg_replace('/[^0-9]/', '', $zipCode);
 
         return $this;
     }
@@ -118,7 +118,7 @@ class Freight implements FreightInterface
      */
     public function destination($zipCode)
     {
-        $this->payload['sCepDestino'] = preg_replace('/[^0-9]/', null, $zipCode);
+        $this->payload['sCepDestino'] = preg_replace('/[^0-9]/', '', $zipCode);
 
         return $this;
     }

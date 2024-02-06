@@ -1,10 +1,10 @@
 <?php
 
-namespace FlyingLuscas\Correios\Services;
+namespace Pedroni\Correios\Services;
 
 use GuzzleHttp\ClientInterface;
-use FlyingLuscas\Correios\WebService;
-use FlyingLuscas\Correios\Contracts\ZipCodeInterface;
+use Pedroni\Correios\WebService;
+use Pedroni\Correios\Contracts\ZipCodeInterface;
 
 class ZipCode implements ZipCodeInterface
 {
@@ -95,7 +95,7 @@ class ZipCode implements ZipCodeInterface
      */
     protected function buildXMLBody()
     {
-        $zipcode = preg_replace('/[^0-9]/', null, $this->zipcode);
+        $zipcode = preg_replace('/[^0-9]/', '', $this->zipcode);
         $this->body = trim('
             <?xml version="1.0"?>
             <soapenv:Envelope
@@ -143,7 +143,7 @@ class ZipCode implements ZipCodeInterface
         $xml = $this->response->getBody()->getContents();
         $parse = simplexml_load_string(str_replace([
             'soap:', 'ns2:',
-        ], null, $xml));
+        ], '', $xml));
 
         $this->parsedXML = json_decode(json_encode($parse->Body), true);
 

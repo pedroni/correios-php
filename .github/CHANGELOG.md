@@ -21,7 +21,7 @@ Atualizações devem seguir os princípios de [Keep a CHANGELOG](http://keepacha
 ## v2.3.3 - 2018-12-26
 
 ### Fixed
-- Corrigido o [erro disparado](https://github.com/flyingluscas/correios-php/issues/17) quando o campo "complemento" não está presente nas buscas de endereços por CEP.
+- Corrigido o [erro disparado](https://github.com/pedroni/correios-php/issues/17) quando o campo "complemento" não está presente nas buscas de endereços por CEP.
 
 ## v2.3.2 - 2017-12-28
 
@@ -32,7 +32,7 @@ Atualizações devem seguir os princípios de [Keep a CHANGELOG](http://keepacha
 
 ### Fixed
 - **Sedex** e **PAC** atualizados de acordo com a atualização dos Correios no dia 05/05/2017 - **[@julianobailao](https://github.com/julianobailao)**
-- Visibilidade do método **fetchZipCodeAddress** alterado para **protected** - **[@flyingluscas](https://github.com/flyingluscas)**
+- Visibilidade do método **fetchZipCodeAddress** alterado para **protected** - **[@pedroni](https://github.com/pedroni)**
 
 ## v2.2.1 - 2017-04-26
 

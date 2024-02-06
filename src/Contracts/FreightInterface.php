@@ -1,6 +1,6 @@
 <?php
 
-namespace FlyingLuscas\Correios\Contracts;
+namespace Pedroni\Correios\Contracts;
 
 interface FreightInterface
 {

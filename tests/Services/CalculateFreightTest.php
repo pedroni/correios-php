@@ -1,13 +1,14 @@
 <?php
 
-namespace FlyingLuscas\Correios\Services;
+namespace Pedroni\Correios\Tests\Services;
 
-use FlyingLuscas\Correios\Service;
-use FlyingLuscas\Correios\TestCase;
+use Pedroni\Correios\Service;
+use Pedroni\Correios\Tests\TestCase;
 use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Psr7\Response;
+use Pedroni\Correios\Services\Freight;
 
 class CalculateFreightTest extends TestCase
 {
@@ -46,7 +47,7 @@ class CalculateFreightTest extends TestCase
      */
     protected $mock;
 
-    public function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 

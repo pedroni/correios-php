@@ -1,15 +1,23 @@
 <?php
 
-namespace FlyingLuscas\Correios;
+namespace Pedroni\Correios\Tests;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase as BaseTestCase;
 
-abstract class TestCase extends PHPUnit_Framework_TestCase
+abstract class TestCase extends BaseTestCase
 {
-    public function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
-        error_reporting(E_ALL);
+        error_reporting(E_DEPRECATED);
+    }
+
+    public function assertArraySubset(array $subset, array $array): void
+    {
+        foreach ($subset as $key => $value) {
+            $this->assertArrayHasKey($key, $array);
+            $this->assertSame($value, $array[$key]);
+        }
     }
 }
